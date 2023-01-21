@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+section {
+    background-color: #222831;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    max-width: 760px;
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(6, 38, 224, 0.52), rgba(216, 190, 190, 0.73)), url(images/flag3.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px 1000px;
+    margin-top: 100px;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+}
+
+.btn-group {
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(10, 1fr);
+    grid-gap: 2px;
+    justify-content: center;
+    padding: 50px;
+}
+
+.ui-button {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 18px;
+    background: #222831;
+    border: 2px #4562a5 solid;
+    cursor: pointer;
+    border-radius: 0.5em;
+    padding: 0px;
+    background-size: 200% auto;
+    color: white;
+    transition: 0.5s;
+    width: 55px;
+    height: 55px;
+    margin: 2px auto;
+}
+
+.ui-button:hover {
+    background: #838891;
+}
+
+#white-house-button {
+    grid-column: span 4;
+    width: 250px;
+}
+
+
+body {
+    background: black;
+}
+
+.header {
+    
+    padding: 25px;
+    text-align: center;
+    background-color: #222831;
+    color: white;
+    font-size: 20px;
+    
+}
+
+.imagez {
+    position: relative;
+}
+
+.imagez img {
+    position: absolute;
+    top: 20px;
+    right: 570px;
+    width: 40%;
+    height: auto;
+}
+
+.hide {
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+}
+
+
+.show {
+    transition: opacity 0.5s ease-in;
+    opacity: 1;
+}
+
+h2 {
+    display: block;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    
+  }
